@@ -30,8 +30,10 @@ export const messages = {
 };
 ```
 
-* Typo of the keys and the arguments for the messages results in a compilation error. The arguments are treated in a type-safe manner.
-* Any inconsistency of the keys and the arguments between messages for the different languages also results in a compilation error.
+* Type-safe: the following things result in compilation errors.
+  * Typo of the key of the messages.
+  * Typo, type mismatch, or excess or deficiency of the arguments for the messages.
+  * Any inconsistency of the messages definition among the different languages.
 * No special syntax is required for complex formatting of numbers, dates, plural/singular, etc. Just write TypeScript to achieve them (as you do wherever else).
 
 ## The implementation is fairly simple and does not require dependency on any i18n library.
