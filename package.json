@@ -1,0 +1,21 @@
+{
+  "name": "ts-i18n",
+  "version": "1.0.0",
+  "description": "Simple i18n implementation with TypeScript",
+  "author": "kimamula",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "typings install",
+    "build": "tsc && webpack",
+    "start": "node ./src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "glob": "^7.0.5",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2",
+    "webpack": "^1.13.1"
+  }
+}
